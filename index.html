@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Dream World </title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a class="logo" href="#">MySite</a>
+
+    <nav id="navMenu" aria-label="Primary">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+
+      <!-- DROPDOWN -->
+      <div class="dropdown" id="servicesDropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="dropdown-toggle" id="servicesBtn" aria-controls="servicesMenu">
+          Services <span class="chev">▾</span>
+        </button>
+        <div class="dropdown-menu" id="servicesMenu" role="menu">
+          <a role="menuitem" href="#cards">Web Design</a>
+          <a role="menuitem" href="#cards">Development</a>
+          <a role="menuitem" href="#cards">SEO</a>
+        </div>
+      </div>
+
+      <a href="#cta">Contact</a>
+      <a class="btn" href="#cta">Get Quote</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Build. Launch. Grow.</h1>
+      <p>Modern, responsive websites and digital products that scale with your business.</p>
+      <a class="btn" href="#cta">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <section class="carousel" aria-label="Showcase">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image:url('./img/i1.jpg');"></div>
+      <div class="slide" style="background-image:url('./img/i2.jpg');"></div>
+      <div class="slide" style="background-image:url('./img/i3.jpg');"></div>
+    </div>
+   
+    
+    <button class="carousel-btn prev" aria-label="Previous slide" id="prevBtn">❮</button>
+    <button class="carousel-btn next" aria-label="Next slide" id="nextBtn">❯</button>
+  </section>
+
+  <!-- Sidebar + Content -->
+  <div class="container">
+    <aside class="sidebar" aria-label="Sidebar">
+      <a href="#">Dashboard</a>
+      <a href="#">Profile</a>
+      <a href="#">Settings</a>
+      <a href="#">Help</a>
+    </aside>
+    <div class="content">
+      <h2>Main Content Area</h2>
+      <p>This is where your articles or product info can go. The sidebar provides quick navigation.</p>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <section class="cards" id="cards">
+    <article class="card">
+      <h3>Web Design</h3>
+      <p>Beautiful, brand-first designs that convert and delight.</p>
+      <a class="btn" href="#cta">Learn More</a>
+    </article>
+    <article class="card">
+      <h3>Development</h3>
+      <p>Fast, secure and scalable apps tailored to your business.</p>
+      <a class="btn" href="#cta">Learn More</a>
+    </article>
+    <article class="card">
+      <h3>SEO</h3>
+      <p>Be discovered. Improve rankings and organic traffic.</p>
+      <a class="btn" href="#cta">Learn More</a>
+    </article>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <h2>Ready to grow your business?</h2>
+    <p>Join hundreds of clients who trust us to deliver top-notch digital solutions.</p>
+    <a class="btn" href="#contact">Contact Us Today</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Support</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
